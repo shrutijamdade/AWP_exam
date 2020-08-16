@@ -1,0 +1,40 @@
+<!-- Create a Simple Form with Username and Password Field and perform following DOM Operations
+a. Empty validation for all the fields.
+b. Read the value of the above fields and display it in the page, below the forms.
+c. Clear the fields once the user submit the form. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+<link rel="stylesheet" href="que2.css">
+<script src="que2.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <div class="main-div">
+                <div style="margin-top: 3px;" id="uname">
+                    Username<input type="text" class="username" required>
+                </div>
+                <div style="margin-top: 3px;"id="pass">
+                   
+                    Password<input type="text" class="pass" required>
+                </div>
+                <div style="margin-top: 3px;">
+                    <button onclick="display()">Submit</button>
+                </div><br>
+        </div>
+
+        <div>
+            <div id="outputdiv" style="display: flex; flex-direction: column;" >
+            <div id="container" style="visibility: hidden;">
+                <div id="uname">Username</div>
+                <div id="pass">Password</div>
+            </div>
+            </div>
+        </div>
+    </div>>
+</body>
+</html>
